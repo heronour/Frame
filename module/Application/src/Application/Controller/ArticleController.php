@@ -8,7 +8,6 @@ use Application\Form\ArticleForm;
 /**
  * Description of ArticleController
  *
- * @author A578204
  */
 class ArticleController extends AbstractActionController{
    

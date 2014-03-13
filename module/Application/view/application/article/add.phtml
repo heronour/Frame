@@ -1,0 +1,36 @@
+<div class="jumbotron">
+    <h5>Gestion d'articles: </h5>
+</div>
+
+<div>
+    <?php 
+        $f = $this->form;
+        $f->prepare();
+        $f->setAttribute('method', 'post');
+    ?>
+    <?php echo $this->form()->openTag($f); ?>
+    <table>
+        <tr>
+            <td>
+                <?php echo $this->formLabel($f->get('title'));?>
+            </td>
+            <td>
+                <?php echo $this->formInput($f->get('title'));?>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <?php echo $this->formLabel($f->get('body'));?>
+            </td>
+            <td>
+                <?php echo $this->formInput($f->get('body'));?>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>   
+    </table>
+    <?php echo $this->form()->closeTag($f); ?>
+</div>
+
