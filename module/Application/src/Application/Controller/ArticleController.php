@@ -17,7 +17,11 @@ class ArticleController extends AbstractActionController{
     
     public function addAction() {
         $form = new ArticleForm('Nouveau Article');
-        
+        $form->get('ajouter')->setValue("Ajouter");
+        $request = $this->getRequest();
+        if ($request->isPost()) {
+            
+        }
         $vm = new ViewModel();
         $vm->setVariable("form", $form);
         
